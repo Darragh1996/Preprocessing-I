@@ -325,7 +325,11 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.5s;
 }
 .contact-container input[type="submit"]:hover {
-  background-color: #5c5cc4;
+  background-color: white;
+  border: 1px solid lightblue;
+  color: lightblue;
+  transition: 0.5s;
 }

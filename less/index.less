@@ -362,10 +362,14 @@ body {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+	cursor: pointer;
+	transition: 0.5s;
   }
 
   input[type="submit"]:hover {
-    background-color: rgb(92, 92, 196);
+	background-color: white;
+	border: 1px solid @secondary-color;
+	color: @secondary-color;
+	transition: 0.5s;
   }
 }
