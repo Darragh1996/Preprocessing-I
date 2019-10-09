@@ -139,6 +139,7 @@ body {
 .h2 {
   font-size: 6rem;
   text-decoration: underline lightblue;
+  font-family: 'Cedarville Cursive', cursive;
 }
 .banner {
   display: flex;
@@ -166,8 +167,8 @@ body {
   text-align: center;
   font-size: 6rem;
   text-decoration: underline lightblue;
-  margin-top: 2%;
   font-family: 'Cedarville Cursive', cursive;
+  margin-top: 2%;
 }
 .banner .nav-area nav {
   width: 80%;
@@ -179,7 +180,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .banner .nav-area nav {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .banner .nav-area nav a {
@@ -212,6 +213,7 @@ body {
 .about h2 {
   font-size: 6rem;
   text-decoration: underline lightblue;
+  font-family: 'Cedarville Cursive', cursive;
 }
 .about p {
   font-size: 1.6rem;
@@ -238,6 +240,7 @@ body {
   margin-bottom: 5%;
   font-size: 6rem;
   text-decoration: underline lightblue;
+  font-family: 'Cedarville Cursive', cursive;
 }
 .skills ul {
   font-size: 2.5rem;
@@ -273,6 +276,7 @@ body {
   margin-bottom: 5%;
   font-size: 6rem;
   text-decoration: underline lightblue;
+  font-family: 'Cedarville Cursive', cursive;
 }
 .work table {
   width: 100%;
@@ -302,6 +306,7 @@ body {
   margin-bottom: 5%;
   font-size: 6rem;
   text-decoration: underline lightblue;
+  font-family: 'Cedarville Cursive', cursive;
 }
 .contact-container input[type="text"],
 .contact-container select,
