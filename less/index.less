@@ -131,6 +131,11 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@main-color: #f7f7f7;
+@secondary-color: lightblue;
+@mobile: 500px;
+
 * {
   box-sizing: border-box;
 }
@@ -141,20 +146,34 @@ body {
   font-size: 62.5%;
 }
 
+.h2 {
+    font-size: 6rem;
+    text-decoration: underline lightblue;
+    // color: black;
+  }
+
 .banner {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: @secondary-color;
   border-bottom: 2px solid black;
+
+  @media screen {
+	@media (max-width: @mobile){
+		flex-direction: column;
+	}
+  }
+
 
   .nav-area {
     width: 100%;
 
     h1 {
-      font-size: 10rem;
-      text-align: center;
-      margin-top: 2%;
+		margin-bottom: 5%;
+		text-align: center;
+		.h2();
+      	margin-top: 2%;
     }
 
     nav {
@@ -168,13 +187,20 @@ body {
       a {
         text-decoration: none;
         color: gray;
-        background-color: #f7f7f7;
+        background-color: @main-color;
         width: 40%;
         text-align: center;
         margin-top: 10%;
         border: 1px solid gray;
         border-radius: 10px;
-        padding: 2%;
+		padding: 2%;
+		transition: 0.5s;
+		
+			&:hover {
+				color: @secondary-color;
+				transition: 0.5s;
+			}
+
       }
     }
   }
@@ -182,7 +208,7 @@ body {
 
 .about {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: @main-color;
   width: 80%;
   height: 100%;
   margin: 5% auto;
@@ -191,9 +217,7 @@ body {
   border-radius: 10px;
 
   h2 {
-    font-size: 6rem;
-    text-decoration: underline;
-    // color: black;
+	  .h2();
   }
 
   p {
@@ -204,7 +228,14 @@ body {
   img {
     width: 20%;
     margin-left: 2%;
-    // height: 20%;
+	// height: 20%;
+	
+	@media screen {
+		@media (max-width: @mobile){
+			display: none;
+		}
+	  }
+
   }
 }
 
@@ -212,14 +243,14 @@ body {
   width: 80%;
   margin: 5% auto;
   padding: 2%;
-  background-color: #f7f7f7;
+  background-color: @main-color;
   border: 1px solid black;
   border-radius: 10px;
 
   h2 {
-    font-size: 6rem;
+    
     margin-bottom: 5%;
-    text-decoration: underline;
+    .h2();
   }
 
   ul {
@@ -231,7 +262,7 @@ body {
       background-color: white;
 
       &:nth-of-type(2n) {
-        background-color: #f7f7f7;
+        background-color: @main-color;
       }
     }
   }
@@ -244,7 +275,18 @@ body {
   width: 80%;
   margin: 5% auto;
   padding: 2%;
-  background-color: #f7f7f7;
+  background-color: @main-color;
+
+  @media screen {
+	@media (max-width: @mobile){
+		font-size: 1.5rem;
+	}
+  }
+
+  h2 {
+	margin-bottom: 5%;
+    .h2();
+  }
 
   table {
     width: 100%;
@@ -261,7 +303,7 @@ body {
 
     th {
       text-align: left;
-      background-color: lightblue;
+      background-color: @secondary-color;
     }
   }
 }
@@ -270,9 +312,15 @@ body {
   width: 80%;
   margin: 2% auto;
   padding: 2%;
-  background-color: #f7f7f7;
+  background-color: @main-color;
   border: 1px solid black;
   border-radius: 10px;
+  font-size: 1.6rem;
+
+  h2 {
+	margin-bottom: 5%;
+    .h2();
+  }
 
   input[type="text"],
   select,
@@ -285,9 +333,8 @@ body {
     resize: vertical;
   }
 
-  /* Style the submit button with a specific background color etc */
   input[type="submit"] {
-    background-color: #4caf50;
+    background-color: @secondary-color;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -295,8 +342,7 @@ body {
     cursor: pointer;
   }
 
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: rgb(92, 92, 196);
   }
 }
