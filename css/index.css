@@ -152,6 +152,12 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 500px) {
+  .banner img {
+    width: auto;
+    height: 400px;
+  }
+}
 .banner .nav-area {
   width: 100%;
 }
@@ -169,6 +175,11 @@ body {
   justify-content: space-around;
   font-size: 3.5rem;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .banner .nav-area nav {
+    font-size: 2.5rem;
+  }
 }
 .banner .nav-area nav a {
   text-decoration: none;
@@ -230,6 +241,11 @@ body {
   font-size: 2.5rem;
   list-style-type: circle;
   margin-left: 3%;
+}
+@media screen and (max-width: 500px) {
+  .skills ul {
+    padding-left: 5%;
+  }
 }
 .skills ul li {
   background-color: white;
