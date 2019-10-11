@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,95 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="main-container">
+    <!-- Initial Content -->
+    <div class="banner">
+      <img src="/images/arthur-fleck-img.jpg" alt="Picture of Arthur Fleck">
+      <div class="nav-area">
+        <h1>Arthur Fleck</h1>
+        <nav>
+          <a href="#about">About Me</a>
+          <a href="#skills">My Skills</a>
+          <a href="#work">Work History</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <!-- About -->
+    <div class="about" id="about">
+      <div class="about-content">
+        <h2>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim. Commodo odio aenean sed adipiscing diam. Natoque penatibus et magnis dis. Sapien eget mi proin sed libero enim sed faucibus turpis. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Vel turpis nunc eget lorem dolor sed. Viverra nibh cras pulvinar mattis nunc sed. Sed risus ultricies tristique nulla. Leo a diam sollicitudin tempor. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat mauris nunc. Dui id ornare arcu odio. Bibendum enim facilisis gravida neque convallis. Iaculis urna id volutpat lacus laoreet. Porttitor lacus luctus accumsan tortor posuere. Tempus quam pellentesque nec nam aliquam sem et tortor.</p>
+      </div>
+      <img src="/images/q-mark-img.png" alt="">
+    </div>
+    <!-- Skills -->
+    <div class="skills" id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Stand-up Comedy</li>
+        <li>Dancing</li>
+        <li>Improv</li>
+        <li>Running</li>
+        <li>Getting Crowds Excited</li>
+      </ul>
+    </div>
+    <!-- Table -->
+    <div class="work" id="work">
+      <h2>Work History</h2>
+      <table id='work-history'>
+        <tr>
+          <th>Company</th>
+          <th>Duration</th>
+          <th>Title</th>
+        </tr>
+        <tr>
+          <td>Gotham Office Supplies</td>
+          <td>9 months</td>
+          <td>Janitor</td>
+        </tr>
+        <tr>
+          <td>Arkham State Asylum</td>
+          <td>1.5 years</td>
+          <td>Patient</td>
+        </tr>
+        <tr>
+          <td>Gotham Clown Entertainment</td>
+          <td>3 years</td>
+          <td>Clown</td>
+        </tr>
+        <tr>
+          <td>Self-Employed</td>
+          <td>Ungoing</td>
+          <td>City Clown</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Contact -->
+    <div class="contact-container" id="contact">
+      <h2>Contact</h2>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+  </div>
 </body>
 </html>
